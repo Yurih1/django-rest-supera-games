@@ -1,7 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include, re_path
 from rest_framework import routers
-from rest_framework_swagger.views import get_swagger_view
 from produto.views import ProdutoViewSet
 from usuario.views import UsuarioViewSet, CompraViewSet
 from rest_framework import permissions
