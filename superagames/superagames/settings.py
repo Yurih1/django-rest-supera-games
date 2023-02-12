@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'usuario',
+    'produto',
+    'rest_framework',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -83,7 +86,7 @@ DATABASES = {
         'USER': config('DB_USER'), 
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST'), 
-        'PORTA': '5432', 
+        'PORTA': config('DB_PORT'), 
     }
 }
 
@@ -110,9 +113,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
